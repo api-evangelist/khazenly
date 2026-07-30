@@ -1,7 +1,29 @@
 aid: khazenly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/khazenly.png
 name: Khazenly
-description: Khazenly is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Khazenly is a Cairo, Egypt based cloud order-fulfillment and e-commerce
+  enablement platform that helps online merchants and brands manage the full
+  post-checkout journey. Its stack combines an order management system,
+  warehousing and pick-pack-ship fulfillment, last-mile delivery, and
+  cash-on-delivery collection so sellers can outsource operations while
+  retaining visibility. Khazenly connects to popular e-commerce storefronts and
+  marketplaces to sync orders, inventory, and shipping status. The company was
+  surfaced as a portfolio company of 500 Global and is tracked in the API
+  Evangelist network; its public developer/API surface is not openly documented,
+  so this profile currently carries identity and domain-security signals rather
+  than harvested API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/khazenly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- E-Commerce
+- Fulfillment
+- Logistics
+- Order Management
+- Last-Mile Delivery
+- Warehousing
+- Egypt
+- Startups
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/khazenly-domain-security.yml
 - type: Website
   url: https://khazenly.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
